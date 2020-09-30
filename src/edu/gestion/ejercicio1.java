@@ -1,6 +1,5 @@
 package edu.gestion;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import edu.facturacion.*;

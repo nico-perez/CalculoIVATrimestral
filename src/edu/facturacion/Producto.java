@@ -6,6 +6,13 @@ public class Producto
     private String descripcion;
     private IVA iva;
 
+    public Producto(double importe, String descripcion)
+    {
+        this.importe = importe;
+        this.descripcion = descripcion;
+        iva = IVA.Normal;
+    }
+
     public Producto(double importe, String descripcion, IVA iva)
     {
         this.importe = importe;

@@ -31,6 +31,6 @@ public class ejercicio2
                 new Producto(1.45, "Sandía", IVA.Normal)
             )
         );
-        System.out.println(factura);
+        System.out.printf(factura + "----------------\nImporte con IVA: %.2f", UtilidadesFactura.calcularImporteFacturaConIVA(factura));
     }
 }
