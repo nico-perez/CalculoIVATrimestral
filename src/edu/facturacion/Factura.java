@@ -14,6 +14,12 @@ public class Factura
         productos = new ArrayList<Producto>();
     }
 
+    public Factura(int numero, List<Producto> productos)
+    {
+        this.numero = numero;
+        this.productos = productos;
+    }
+
     public int getNumero()
     {
         return numero;
@@ -32,5 +38,18 @@ public class Factura
     public void setProductos(List<Producto> productos)
     {
         this.productos = productos;
+    }
+
+    @Override
+    public String toString()
+    {
+        String s = "Factura número " + numero + "\n----------------\n";
+
+        for (var producto : productos)
+        {
+            s += producto.getImporte() + "\t" + producto.getDescripcion() + "\n";
+        }
+
+        return s;
     }
 }

@@ -1,5 +1,6 @@
 package edu.gestion;
 
-public class ejercicio3 {
-    //
+public class ejercicio3
+{
+    
 }

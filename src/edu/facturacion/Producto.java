@@ -2,23 +2,30 @@ package edu.facturacion;
 
 public class Producto 
 {
-	private double importe;
-	private String descripcion;
-	
-	public Producto(double importe, String descripcion)
-	{
-		this.importe = importe;
-		this.descripcion = descripcion;
-	}
+    private double importe;
+    private String descripcion;
+    private IVA iva;
 
-	public double getImporte()
-	{
-		return importe;
-	}
+    public Producto(double importe, String descripcion, IVA iva)
+    {
+        this.importe = importe;
+        this.descripcion = descripcion;
+        this.iva = iva;
+    }
 
-	public String getDescripcion()
-	{
-		return descripcion;
+    public double getImporte()
+    {
+        return importe;
+    }
+
+    public String getDescripcion()
+    {
+        return descripcion;
+    }
+
+    public IVA getIVA()
+    {
+        return iva;
     }
 }
 
