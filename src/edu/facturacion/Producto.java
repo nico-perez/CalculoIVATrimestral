@@ -5,10 +5,19 @@ public class Producto
 	private double importe;
 	private String descripcion;
 	
-	public double getImporte() {
+	public Producto(double importe, String descripcion)
+	{
+		this.importe = importe;
+		this.descripcion = descripcion;
+	}
+
+	public double getImporte()
+	{
 		return importe;
 	}
-	public String getDescripcion() {
+
+	public String getDescripcion()
+	{
 		return descripcion;
     }
 }
