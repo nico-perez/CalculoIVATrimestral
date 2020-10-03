@@ -1,10 +1,12 @@
 package edu.facturacion;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Factura
 {
+    private Calendar fecha;
     private int numero;
     private List<Producto> productos;
     
@@ -18,6 +20,12 @@ public class Factura
     {
         this.numero = numero;
         this.productos = productos;
+    }
+
+    public Factura(int numero, List<Producto> productos, Calendar fecha)
+    {
+        this(numero, productos);
+        this.fecha = fecha;
     }
 
     public int getNumero()
@@ -38,6 +46,16 @@ public class Factura
     public void setProductos(List<Producto> productos)
     {
         this.productos = productos;
+    }
+
+    public Calendar getFecha()
+    {
+        return fecha;
+    }
+
+    public void setFecha(Calendar fecha)
+    {
+        this.fecha = fecha;
     }
 
     @Override
