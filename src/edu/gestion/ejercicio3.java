@@ -76,6 +76,7 @@ public class ejercicio3
                 new Calendar.Builder().setDate(2020, Calendar.OCTOBER, 2).build()
             )
         );
+        for (var f : facturas) System.out.println(f);
         System.out.printf("IVA trimestral: %.2f€\n", UtilidadesCalculoIVA.calculoIVATrimestral(facturas, Calendar.OCTOBER, 2020));
         System.out.printf("IVA mensual: %.2f€\n", UtilidadesCalculoIVA.calculoIVAMesActual(facturas, Calendar.OCTOBER, 2020));
     }
